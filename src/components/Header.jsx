@@ -10,7 +10,7 @@ export const Header = () => {
             component="div"
             sx={{ margin: "30px", flexGrow: 1 }}
           >
-            余りものでレシピ検索
+            なんでも料理名・材料名でレシピ検索
           </Typography>
         </Toolbar>
       </AppBar>
