@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import { useState, useEffect } from "react";
 
 export const RecipeMaterial = ({ categoryId }) => {
@@ -33,6 +33,10 @@ export const RecipeMaterial = ({ categoryId }) => {
   }, [categoryId]);
   console.log(material);
 
+  const handleButtonClick = (link) => {
+    return window.open(link);
+  };
+
   return (
     <Box
       sx={{
@@ -65,7 +69,9 @@ export const RecipeMaterial = ({ categoryId }) => {
               <li key={idx}>{materials}</li>
             ))}
           </ul>
-          <a href={item.recipeUrl}>作り方はこちら</a>
+          <Button onClick={() => window.open(item.recipeUrl)}>
+            作り方はこちら
+          </Button>
         </Box>
       ))}
     </Box>
