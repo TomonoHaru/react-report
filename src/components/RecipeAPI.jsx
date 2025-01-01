@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 export const RecipeAPI = () => {
   const [recipe, setRecipe] = useState(null);
+  console.log(import.meta.env.VITE_RAKUTEN_API_KEY);
   useEffect(() => {
     try {
       const fetchData = async () => {
