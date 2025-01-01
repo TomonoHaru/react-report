@@ -31,7 +31,6 @@ export const RecipeMaterial = ({ categoryId }) => {
       console.error("Error fetching data:", error);
     }
   }, [categoryId]);
-  console.log(material);
 
   const handleButtonClick = (link) => {
     return window.open(link);
