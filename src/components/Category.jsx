@@ -42,7 +42,7 @@ export const Category = ({ keyWord }) => {
       ]);
       setParentDict(parentMapping);
     }
-  }, [recipe]);
+  }, [keyWord]);
 
   const selectCategories = categories.filter((item) => {
     return item.categoryName.includes(`${keyWord}`);

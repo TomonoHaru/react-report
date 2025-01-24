@@ -32,10 +32,6 @@ export const RecipeMaterial = ({ categoryId }) => {
     }
   }, [categoryId]);
 
-  const handleButtonClick = (link) => {
-    return window.open(link);
-  };
-
   return (
     <Box
       sx={{
